@@ -6,6 +6,10 @@
 % Use English and Swedish languages. 
 $if(english)$
 \usepackage[swedish,english]{babel} % English
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Table of Contents}%
+}
 $endif$
 $if(swedish)$
 \usepackage[english,swedish]{babel} % Swedish
