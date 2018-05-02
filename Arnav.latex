@@ -141,8 +141,10 @@ $if(url)$
 \usepackage{url}
 $endif$
 
-
-
+%Bibliography style
+$if(bibstyle)$
+\bibliographystyle{$bibstyle$}
+$endif$
 
 % Section numbering.  
 % Here again is a variable you can specify on the commandline
