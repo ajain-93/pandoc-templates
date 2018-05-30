@@ -275,11 +275,9 @@ $endif$
 \setlength{\belowdisplayskip}{3pt}
 \setlength{\belowdisplayshortskip}{0pt}
 
-\pagenumbering{roman}
 $if(titlepage)$
-\begin{titlepage}
+%\begin{titlepage}
 % Print Document & Title information 
-\thispagestyle{empty}
 \begin{center}
 \textsc{\LARGE \theuniversityname}\\
 [1.5cm]
@@ -303,16 +301,17 @@ $if(titlepage)$
 % ToDo List
 \vfill
 \end{center}
-\newpage
-\end{titlepage}
+\thispagestyle{empty}
+%\newpage
+%\end{titlepage}
 $endif$
+
 
 $if(toc)$
 \tableofcontents
 \newpage
 $endif$
 
-\pagenumbering{arabic}
 $if(listfigures)$
 \listoffigures
 \newpage
