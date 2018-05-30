@@ -173,7 +173,6 @@ $else$
 $endif$
 
 
-
 %Enable Math
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -259,9 +258,8 @@ $else$
 \rhead{\thepage}
 %\cfoot{\rightmark}
 $endif$
+
 \usepackage{datetime}
-
-
 \pdfinfo{
    $if(author)$/Author (\theauthor)$endif$
    $if(title)$/Title  (\thetitle)$endif$
