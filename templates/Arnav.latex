@@ -149,12 +149,16 @@ $if(bibstyle)$
 \bibliographystyle{$bibstyle$}
 $endif$
 
+
 % Section numbering.  
 % Here again is a variable you can specify on the commandline
 % `markdown2pdf my.txt --number-sections --xetex --template=/wherever/this/is -o my.pdf`
 $if(numbersections)$
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
 $else$
 \setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{5}
 $endif$
 
 
