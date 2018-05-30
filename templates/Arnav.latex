@@ -105,8 +105,10 @@ $endif$
 %\setenumerate{noitemsep}
 
 % Enable formatting of source code
+\newcommand{\passthrough}[1]{#1}
 \usepackage{listing}
 \renewcommand*{\listlistingname}{List of Code Listings}
+\usepackage{listings}
 
 \usepackage[final]{matlab-prettifier}
 \lstset{
