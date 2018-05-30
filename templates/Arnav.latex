@@ -223,8 +223,25 @@ $endif$
     This page has intentionally been left blank.
     \end{center}
     \vspace{\fill}
-%    \thispagestyle{empty}
-\newpage}
+    \thispagestyle{empty}
+    \newpage
+}
+
+\newcommand{\placeholder}[1]{
+    \newpage
+    \placeholderSamePage{#1}
+}
+
+\newcommand{\placeholderSamePage}[1]{
+    \vspace*{\fill}
+    \hfill
+    \begin{center}
+    This page is a placeholder for #1.
+    \end{center}
+    \vspace{\fill}
+    \thispagestyle{empty}
+    \newpage
+}
 
 % Fancy Header
 \usepackage{fancyhdr}
