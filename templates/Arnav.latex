@@ -213,6 +213,16 @@ $endif$
 \newcommand{\theuniversityname}{$if(university)$$university$$else$\ $endif$}
 \newcommand{\theuniversitylogoname}{$if(unilogo)$$unilogo$$else$\ $endif$}
 
+\newcommand{\emptypage}{
+    \newpage
+    \vspace*{\fill}
+    \hfill
+    \begin{center}
+    This page has intentionally been left blank.
+    \end{center}
+    \vspace{\fill}
+%    \thispagestyle{empty}
+\newpage}
 
 % Fancy Header
 \usepackage{fancyhdr}
