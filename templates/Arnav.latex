@@ -284,6 +284,20 @@ $if(toc)$
 $endif$
 
 \pagenumbering{arabic}
+$if(listfigures)$
+\listoffigures
+\newpage
+$endif$
+
+$if(listtables)$
+\listoftables
+\newpage
+$endif$
+
+$if(listcode)$
+\listoflistings
+\newpage
+$endif$
 
 $if(alignment)$
 \begin{$alignment$}
