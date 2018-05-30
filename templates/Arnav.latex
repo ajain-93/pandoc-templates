@@ -105,7 +105,9 @@ $endif$
 %\setenumerate{noitemsep}
 
 % Enable formatting of source code
-%\usepackage{listings}
+\usepackage{listing}
+\renewcommand*{\listlistingname}{List of Code Listings}
+
 \usepackage[final]{matlab-prettifier}
 \lstset{
 	numbers=left,
