@@ -75,6 +75,7 @@ $endif$
 
 % Enable extra references
 \usepackage{nameref}
+%\newcommand{\references}{}
 
 $if(subscript)$
 \newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
