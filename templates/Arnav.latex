@@ -167,13 +167,26 @@ $endif$
 % Section numbering.  
 % Here again is a variable you can specify on the commandline
 % `markdown2pdf my.txt --number-sections --xetex --template=/wherever/this/is -o my.pdf`
+
+
 $if(numbersections)$
-\setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{5}
+    $if(sectiondepth)$
+    \setcounter{secnumdepth}{$sectiondepth$}
+    $else$
+    \setcounter{secnumdepth}{5}
+    $endif$
+    
 $else$
 \setcounter{secnumdepth}{0}
+$endif$
+
+$if(tocdepth)$
+\setcounter{tocdepth}{$tocdepth$}
+$else$
 \setcounter{tocdepth}{5}
 $endif$
+
+
 
 
 %Enable Math
